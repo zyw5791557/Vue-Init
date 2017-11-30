@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Emlice</title>
+	<link rel="icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAeAAAAIgAAAB4AAAAcAAAAEgAAABAAAAAQAAAADgAAAAgAAAAGAAAABAAAAAIAAAAAAAAAAAAAAB4AAAAikpKSZL6+vrC5ubmkfHx8VmBgYEgbGxsoAAAAIgAAABgAAAAKAAAABAAAAAIAAAAEAAAAAgAAABQAAAAkAAAAHq2trW6+vsP/iYya/6iqsf/Dw8Xw3t7e+NjY2LLPz8+Gz8/PfqOjoy6ampoYAAAABgAAAAAAAAAcAAAAFAAAABiOjo6SYmt6/zVAW/88RGH/PURd/0lNYP91fIz/mqGw/7vAzv/Z3OL/8PDw3uzs7LYAAAACAAAAGAAAAA4AAAAOlZWV3ktRav9IW4j/UGWZ/09npf9MZaD/UG2m/1JuoP9PZ5P/TGOU/621xf/j4+NuAAAAAgAAABwAAAAMSUlJKtPT0948RWz/Rlmb/1ZbfP9WXIP/W2+h/3CHsv9risr/e6Hc/4Cx7//W4O//v7+/PAAAAAIAAAAUAAAAIDQ0NDrNzdH2RkJV/0tSev9ib53/ZWd5/2hxj/+tu8j/bHqr/3iPyv+euej/8fL0+NHR0TYAAAAAAAAAAAAAAB67u7t0r7G9/0dco/9SbLX/fYKZ/3x+kP9obpT/goqp/7e/yP99f5b/eH+j//T09OAEBAQEAAAAAAAAAAAAAAAAx8fHipaSmP9FRGf/SGS1/294of+OjZ3/i4ug/3RwgP+bnqz/tLrG/6Kjsf/q6uqoAAAAAgAAAAAAAAAAAAAAAOvr65yGg5X/S058/1Z31v92hsj/l5Ga/56bqv+PiZb/fXmN/5GRqf+5ucT/7u7unAAAAAAAAAAAAAAAAAAAAAT4+PjoZmB4/1BPdv9WXJL/ZXvN/4SHrf+Lf4f/ioGQ/3VqdP91a3L/0c/U/+Pj41wAAAAAAAAAAAAAAADS0tIk7+/v6k0/R/9OTnj/Vl2c/192yf94e6v/b2h1/3ZwjP9fWGP/dWhr/+Xk5Pa/v78iAAAAAAAAAAAAAAAAv7+/LOHf3/xpWlr/VUVL/1NNcP9VXp3/bmuU/1tTV/9cVGH/SERL/3Zsef/6+fnsxcXFHAAAAAAAAAAAAAAAAOXl5WDs7Oyi+fn57PDv7+7S0NP/tbG8/6WerP+FfIj/cWJn/1xVY/+FfYb/9PT00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0dHQTV1dUqxMTEMuvr63zv7++s8fHxvvj4+fLg4er63dvd/+np6YoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4eHgKenp4Q39/fRNjY2E7m5uZiAAAAAAAAAAAAAAAA//8AAPP/AADwHwAA4AEAAOADAADgAwAA4AMAAOADAADAAwAAwAMAAMAHAADABwAAwAcAAMAHAAD+BwAA//8AAA==" type="image/x-icon">
+	<!--兼容提示-->
+	<script>
+		var theUA = window.navigator.userAgent.toLowerCase();
+		if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+			var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+			if (ieVersion < 10) {
+				var str = "你的浏览器版本太低了\n已经和时代脱轨了 :(";
+				var str2 = "推荐使用最新版:<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:#FF4949'>谷歌</a>,"
+				+ "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:#FF4949'>火狐</a>,"
+				+ "其他双核极速模式";
+				document.writeln("<pre style='text-align:center;color:#fff;background-color:#333; height:100%;border:0;position:fixed;top:0;left:0;width:100%;z-index:1234'>" + 
+					"<h2 style='padding-top:200px;margin:0'><strong>" + str + "<br/></strong></h2><p>" + 
+					str2 + "</p><h2 style='margin:0'><strong>如果你的使用的是双核浏览器,请切换到极速模式访问<br/></strong></h2></pre>");
+				document.execCommand("Stop");
+			};
+		}
+	</script>
+</head>
+
+<body>
+  <div id="app">
+
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
