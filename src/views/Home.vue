@@ -7,7 +7,7 @@
 				<a class="item" id="doc" :href="apiDoc" target="_blank">{{ apiText }}</a>
 			</p>
 			<ul>
-				<router-link class="item" :to="{ name: 'Music' }" tag="li">{{ itemMusicText }}</router-link>
+				<a class="item" href="https://www.emlice.top/music" tag="li">{{ itemMusicText }}</a>
 			</ul>
 		</div>
 		<canvas></canvas>
