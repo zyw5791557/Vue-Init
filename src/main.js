@@ -6,10 +6,6 @@ import App from './App'
 import VueRouter from 'vue-router'
 // import store from './vuex/store'
 // import Vuex from 'vuex'
-// axios
-import axios from 'axios'
-
-Vue.prototype.$axios = axios;     // Vue2.0+官方推荐
 
 // 进度条
 import NProgress from 'nprogress';
@@ -23,10 +19,10 @@ import routes from './routes'
 //jQuery
 // import $ from 'jquery';
 
-import { setLocalStorage, getLocalStorage } from './api/api';
-// import api_port from './api/api_address';
+import { setLocalStorage, getLocalStorage } from './common/js/util.js';
+// import api from './api/index';
 
-// Vue.use(api_port)
+// Vue.use(api)
 // Vue.use(ElementUI)
 Vue.use(VueRouter)
 // Vue.use(Vuex)
