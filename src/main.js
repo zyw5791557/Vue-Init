@@ -3,8 +3,7 @@ import Vue from 'vue'
 import App from './App'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-default/index.css'
-// import store from './vuex/store'
-// import Vuex from 'vuex'
+import store from './store'
 
 // 进度条
 import NProgress from 'nprogress';
@@ -24,8 +23,6 @@ import { setLocalStorage, getLocalStorage } from './common/js/util.js';
 // Vue.use(api)
 // Vue.use(ElementUI)
 
-// Vue.use(Vuex)
-
 
 // 全局 axiosBaseURL
 Vue.prototype.$BASE_URL = process.env.API_ROOT;
@@ -33,7 +30,7 @@ Vue.prototype.$BASE_URL = process.env.API_ROOT;
 
 new Vue({
 	router,
-	// store,
+	store,
 	render: h => h(App)
 }).$mount('#app')
 
