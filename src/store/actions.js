@@ -9,7 +9,7 @@ export const increment = ({ commit, state }, n) => {
 }
 
 /**
- * @function increment 减少数量
+ * @function decrement 减少数量
  */
 export const decrement = ({ commit, state }, n) => {
     commit('SET_COUNT_DECREMENT')

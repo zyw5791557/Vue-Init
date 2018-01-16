@@ -1,5 +1,9 @@
 <template>
 	<div class="home">
+		<!-- 追加 vuex 测试 -->
+		{{ count }}
+		<button @click.stop="increment">加</button>
+		<button @click.stop="decrement">减</button>
 		<div id="wrapper">
 			<h1>{{ author }}</h1>
 			<h2>{{ wisdom }}</h2>
@@ -15,6 +19,7 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
 export default {
 	data() {
 		return {
@@ -25,7 +30,18 @@ export default {
 			itemMusicText: 'Listening to music'
 		}
 	},
+	computed: {
+		...mapState([
+				'count'
+			])
+	},
 	methods: {
+
+		...mapActions([
+				'increment',
+				'decrement'
+			]),
+
 		drawCanvas() {
 			document.addEventListener('touchmove', function(e) {
 				e.preventDefault()
