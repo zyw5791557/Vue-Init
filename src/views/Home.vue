@@ -103,7 +103,7 @@ export default {
 		this.stopPropagation();
 		setTimeout(() => {
             this.$NProgress.done();
-        }, 0);
+		}, 0);
 	}
 }
 </script>

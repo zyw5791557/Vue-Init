@@ -18,9 +18,9 @@ import router from './router'
 // import $ from 'jquery';
 
 import { setLocalStorage, getLocalStorage } from './common/js/util.js';
-// import api from './api/index';
+import api from './api/index';
 
-// Vue.use(api)
+Vue.use(api)
 // Vue.use(ElementUI)
 
 
